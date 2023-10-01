@@ -1,0 +1,80 @@
+/* style it with theme of kids game */
+
+
+/* Resets for some default styles to ensure consistency across browsers */
+body, h1, h2, p, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+/* General body styles */
+body {
+	background-color: #FFDDC1;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 32px;
+	color: #FF6B6B;
+}
+
+h2 {
+	font-size: 26px;
+	color: #4ECDC4;
+}
+
+/* Styles for sections - like containers or card styles */
+section {
+	background-color: #FFEBB7;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+/* Button styles */
+button {
+	background-color: #54A0FF;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transition: transform 0.2s, box-shadow 0.2s;  /* Transition for hover effects */
+}
+
+/* Button hover effects */
+button:hover {
+	transform: scale(1.05);   /* Enlarges the button slightly */
+	box-shadow: 0 6px 8px rgba(0,0,0,0.15);  /* Darker shadow for depth effect */
+}
+
+/* Paragraph spacing */
+p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: aliceblue;
+	text-align: center;
+}
+
+/* Style for the story container */
+#story {
+	background-color: #FFE66D;
+	padding: 15px;
+	border-radius: 15px;
+	min-height: 100px;
+	box-shadow: inset 0 4px 6px rgba(0,0,0,0.1);  /* Inner shadow for an inset effect */
+}

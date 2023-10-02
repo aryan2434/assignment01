@@ -114,6 +114,8 @@ function reset_on_click() {
     pNoun2.textContent = "";
     pSetting.textContent = "";
     pStory.textContent = "";
+    pInfo.textContent = "";
+
 }
 
 function displayStudentInfo() {

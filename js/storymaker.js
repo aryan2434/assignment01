@@ -8,6 +8,7 @@ const btnVerb = document.getElementById("verb");
 const btnAdjective = document.getElementById("adjective");
 const btnNoun2 = document.getElementById("noun2");
 const btnSetting = document.getElementById("setting");
+const pInfo = document.getElementById("studentInfo");
 
 // Constants for p tag to display query selectors
 const pNoun1 = document.getElementById("choosenNoun1");
@@ -20,13 +21,14 @@ const pStory = document.getElementById("story");
 // Constants for final buttons and p tags
 const btnPlayback = document.getElementById("playback");
 const btnRandom = document.getElementById("random");
-
+const btnReset = document.getElementById("reset");
+const btnShowStudentInfo = document.getElementById("showStudentInfo");
 // Variables for pre-defined arrays
-const nouns1 = ["Aryan", "Ansh", "Astu","Yogi","Rahi"]; 
-const verbs = ["ran","walked","passed", "jumped", "swam"];
-const adjectives = ["happy", "small", "bright", "cold", "soft"];
-const nouns2 = ["book", "chair", "ocean", "guitar", "planet"];
-const settings = ["in the class.","on the mountain.","at the park.", "in the zoo.", "on the beach."];
+const nouns1 = ["The turkey", "Mom","Dad","The dog","The teacher","The elephant","The cat"]; 
+const verbs = ["sat on","ate","danced with","saw","doesn't like","kissed"];
+const adjectives = ["a funny","a scary","a goofy","a slimy","a barking","a fat"];
+const nouns2 = ["goat","monkey","fish","cow","frog","bug","worm"];
+const settings = ["on the moon","on the chair","in my spaghetti","in my soup","on the grass","in my shoes"];
 
 // Variables for count to grab array elements
 let noun1Count = 0;
@@ -97,6 +99,28 @@ function random_on_click() {
     pStory.textContent = story;
 }
 
+function reset_on_click() {
+    // Reset the counts
+    noun1Count = 0;
+    verbCount = 0;
+    adjectiveCount = 0;
+    noun2Count = 0;
+    settingCount = 0;
+
+    // Reset the displayed words
+    pNoun1.textContent = "";
+    pVerb.textContent = "";
+    pAdjective.textContent = "";
+    pNoun2.textContent = "";
+    pSetting.textContent = "";
+    pStory.textContent = "";
+}
+
+function displayStudentInfo() {
+    pInfo.textContent = "StudentNo : 200544014 || Student name : Aryan Ukani";
+}
+
+
 /* Event Listeners
 -------------------------------------------------- */
 btnNoun1.addEventListener("click", noun1_on_click);
@@ -106,3 +130,5 @@ btnNoun2.addEventListener("click", noun2_on_click);
 btnSetting.addEventListener("click", setting_on_click);
 btnPlayback.addEventListener("click", playback_on_click);
 btnRandom.addEventListener("click", random_on_click);
+btnReset.addEventListener("click", reset_on_click);
+btnShowStudentInfo.addEventListener("click", displayStudentInfo);
